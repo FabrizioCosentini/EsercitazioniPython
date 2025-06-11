@@ -51,3 +51,42 @@
 #    print("Too low!")
 #else:
 #    print("Too high!")
+
+#Lost in the Forest task (refined)
+#where = input ("You're lost in the forest. Go left or right? ")
+#n_tries = 0
+#while where.lower() != "left" and n_tries < 2:
+#    if where.lower() == "right":
+#        n_tries += 1
+#        if n_tries < 2:
+#            where = input("You're still lost in the forest. Go left or right? ")
+#    else:
+#        print("You can only go left or right.")
+#        where = input ("Again, go left or right? ")
+#if n_tries < 2:
+#    print("You got out of the forest!")
+#else:
+#    print(":(")
+
+#Non-integer Task
+#n = int(input("Enter a non-negative integer: "))
+#while n > 0:
+#    print ("X")
+#    n=n-1
+
+#Factorial finder Task
+#x = 4
+#i = 1
+#factorial = 1
+#while i <= x:
+#    factorial *=i
+#    i +=1
+#print(f"{x} factorial is {factorial}")
+
+#Total sum Task
+#mysum = 0
+#start = 5
+#end = 10
+#for i in range (start, end+1):
+#    mysum += i
+#print(mysum)
