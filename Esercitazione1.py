@@ -187,3 +187,100 @@
 #     print(n_1, "is equal to -" + str(bin), "in binary notation")
 # else:
 #     print(n_1, "is equal to", bin, "in binary notation")
+
+#Binary Decimals Finder
+# x = input("Choose a decimal: ")
+# p=0
+# while ((2**p)*float(x))%1 != 0:
+#     print ("Remainder = " + str((2**p)*float(x) - int((2**p)*float(x))))
+#     p+=1
+# num = int(float(x)*(2**p))
+# result =""
+# if num == 0:
+#     result = "0"
+# while num > 0:
+#     result = str(num%2) + result
+#     num = num//2
+# for i in range (p-len(result)):
+#     result = "0"+ result
+# result = result [0:-p] + "." + result [-p::]
+# print("The binary representation of the decimal " + str (x) + " is " + str(result))
+
+#Approx task
+# x = input("Choose a number: ")
+# epsilon = 0.01
+# n_guesses = 0
+# guess = 0.0
+# increment = 0.00001
+# while abs(guess**2 - float(x)) >= epsilon and guess**2 <= float(x):
+#     guess += increment
+#     n_guesses += 1
+# print(n_guesses, "guesses were taken")
+# if abs (guess**2 - float(x)) >= epsilon:
+#     print("An acceptable guess wasn't found.")
+# else:
+#     print(guess, "is close to square root of", x)
+
+#Precise and Fast Bisection task
+# x = float(input("Choose a number: "))
+# epsilon = 0.0001
+# n_guesses = 0
+# if x < 0:
+#     print("The number has no real square roots")
+# else:
+#     if 0 < x < 1:
+#         low = x
+#         high = 1.0
+#     else:
+#         low = 0.0
+#         high = x
+#     guess = (high + low)/2.0
+#     while abs (guess**2 - x) >= epsilon:
+#         if guess**2 < x:
+#             low = guess
+#         else:
+#             high = guess
+#         guess = (high + low)/2.0
+#         n_guesses += 1
+#     print(n_guesses, "guesses were taken")
+#     print(guess, "is close to square root of", x)
+
+#Bisection Cube Root Task
+# x = float(input("choose a number: "))
+# epsilon = 0.0001
+# if x == 0:
+#     print("The cubic root of 0 is equal to 0")
+# else:
+#     if x > 0:
+#         if 0 < x < 1:
+#             low = x
+#             high = 1
+#         else:
+#             low = 0
+#             high = x
+#     else:
+#         if -1 < x < 0:
+#             low = -1
+#             high = x
+#         else:
+#             low = x
+#             high = 0
+#     guess = (high + low)/2.0
+#     while abs (guess**3 - x) >= epsilon:
+#         if guess**3 > x:
+#             high = guess
+#         else:
+#             low = guess
+#         guess = (high + low)/2.0
+#     print(guess, "is close to cubic root of", x)
+
+# Newton-Raphson root finder
+# epsilon = 0.000001
+# k = float(input("Choose a number: "))
+# guess = k/2.0
+# n_guesses = 0
+# while abs(guess**2 -k) >= epsilon:
+#     n_guesses += 1
+#     guess = guess - ((guess**2 - k)/(2*guess))
+# print(n_guesses, "guesses were made")
+# print("The square root of " + str(k) + "is about " + str(guess))
