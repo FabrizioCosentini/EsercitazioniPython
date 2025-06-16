@@ -284,3 +284,31 @@
 #     guess = guess - ((guess**2 - k)/(2*guess))
 # print(n_guesses, "guesses were made")
 # print("The square root of " + str(k) + "is about " + str(guess))
+
+#Creating a function
+# def is_even(i):
+#     """ Input: i, a positive int
+#     Returns True if i is even, False otherwise"""
+#     return i%2 == 0
+#
+# print(is_even(3))
+# print(is_even(8))
+
+#Create a function #2 Task
+# def div_by(n, d):
+#     """n and d are ints > 0
+#     Returns True if d divides n evenly and False otherwise"""
+#     return n%d ==0
+#
+# print(div_by(10,3))
+# print(div_by(195,13))
+
+#Create sum_odd(a, b) Task
+def sum_odd(a, b):
+    """ a and b are the integer ends of a list of numbers
+    Returns the sum of the odd integers between a and b"""
+    sum_of_odds = 0
+    for i in range(a, b+1):
+        if i%2==1:
+            sum_of_odds += i
+    return sum_of_odds
