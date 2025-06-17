@@ -286,10 +286,10 @@
 # print("The square root of " + str(k) + "is about " + str(guess))
 
 #Creating a function
-# def is_even(i):
-#     """ Input: i, a positive int
-#     Returns True if i is even, False otherwise"""
-#     return i%2 == 0
+def is_even(i):
+    """ Input: i, a positive int
+    Returns True if i is even, False otherwise"""
+    return i%2 == 0
 #
 # print(is_even(3))
 # print(is_even(8))
@@ -304,11 +304,103 @@
 # print(div_by(195,13))
 
 #Create sum_odd(a, b) Task
-def sum_odd(a, b):
-    """ a and b are the integer ends of a list of numbers
-    Returns the sum of the odd integers between a and b"""
-    sum_of_odds = 0
-    for i in range(a, b+1):
-        if i%2==1:
-            sum_of_odds += i
-    return sum_of_odds
+# def sum_odd(a, b):
+#     """ a and b are the integer ends of a list of numbers
+#     Returns the sum of the odd integers between a and b"""
+#     sum_of_odds = 0
+#     for i in range(a, b+1):
+#         if i%2==1:
+#             sum_of_odds += i
+#     return sum_of_odds
+
+#Fix the function Task
+# def is_triangular(n):
+#     """n is an int > 0
+#     Returns True if n is triangular, i.e. equals a continued summation of natural numbers (1+2+3+...+k), False otherwise"""
+#     total=0
+#     for i in range(n+1):
+#         total += i
+#         if total ==n:
+#             return True
+#     return False
+#
+# print(is_triangular(1))
+
+#Create bisection_root function
+# def bisection_root(x):
+#     epsilon =0.000001
+#     low= 0
+#     high = x
+#     ans = (high + low)/2.0
+#     while abs (ans**2-x) >= epsilon:
+#         if ans**2 < x:
+#             low=ans
+#         else:
+#             high =ans
+#         ans=(high +low)/2.0
+#     return ans
+#
+# print(bisection_root(float(input("Choose a positive integer: "))))
+
+#Count_nums_with_sqrt_close_to Task
+# def count_nums_with_sqrt_close_to(n, eps ilon):
+#     """n is an int > 2
+#         epsilon is a positive number < 1
+#     Returns how many integers have a square root within epsilon of n"""
+#     n_nums = 0
+#     for i in range(n**3):
+#         root = bisection_root(i)
+#         if abs(n - root) < epsilon:
+#             n_nums += 1
+#         if root > n + epsilon:
+#             break
+#     return n_nums
+#
+# print(count_nums_with_sqrt_close_to(10, 1))
+
+#Different Scopes task
+# def f(x):
+#     x = x + 1
+#     print("In f(x): x =", x)
+#     return x
+#
+# print(f(1))
+
+#Functions as objects task
+# def calc(op, a, b):
+#     return op(a, b)
+#
+# def add(a, b):
+#     return a + b
+#
+# def div(a, b):
+#     if b !=0:
+#         return a / b
+#     print("Denominator was 0.")
+
+#Functions as parameters Example
+# def func_a():
+#     print("inside func_a")
+# def func_b(y):
+#     print("inside func_b")
+#     return y
+# def func_c(f, z):
+#     print("inside func_c")
+#     return f(z)
+#
+# # print(func_a())
+# # print(5 + func_b(2))
+# print(func_c(func_b, 3))
+
+#Functions as parameters Task
+# def apply(criteria, n):
+#     """* criteria is a func that takes in a number and returns a bool
+#         * n is an int
+#     Returns how many ints from 0 to n (inclusive) match the criteria (i.e. return True when run with criteria)"""
+#     count = 0
+#     for i in range(n +1):
+#         if criteria(i):
+#             count += 1
+#     return count
+#
+# print(apply(is_even, 10))
