@@ -286,10 +286,10 @@
 # print("The square root of " + str(k) + "is about " + str(guess))
 
 #Creating a function
-def is_even(i):
-    """ Input: i, a positive int
-    Returns True if i is even, False otherwise"""
-    return i%2 == 0
+# def is_even(i):
+#     """ Input: i, a positive int
+#     Returns True if i is even, False otherwise"""
+#     return i%2 == 0
 #
 # print(is_even(3))
 # print(is_even(8))
@@ -404,3 +404,82 @@ def is_even(i):
 #     return count
 #
 # print(apply(is_even, 10))
+
+#Lamba Example
+# print(apply(lambda x: x%2 == 0, 10))
+
+#Lambda Task
+# def do_twice(n, fn):
+#     return fn(fn(n))
+#
+# print(do_twice(3, lambda n: n ** 2))
+
+#Tuple Test
+# seq = (2, "a", 4, (1, 2))
+#
+# print(len(seq))
+# print(seq[3])
+# print(seq[-1])
+# print(seq[3] [0])
+# print(seq[4])
+
+#Switching values with tuples
+# x = 1
+# y = 2
+# (x, y) = (y, x)
+# print(x)
+# print(y)
+
+#Return more than one value
+# def quotient_and_remainder(a, b):
+#     q = a // b
+#     r = a % b
+#     return q, r
+#
+# print(quotient_and_remainder(5, 2))
+#
+# (quot, rem) = quotient_and_remainder(5, 2)
+#
+# print("The quotient is", quot)
+# print("The remainder is", rem)
+
+#Char_counts task
+# def char_counts(s):
+#     """s is a string of lowercase chars
+#     Return a tuple where the first element is the number of vowels in s and the second element is the number of consonants in s"""
+#     vowels = "aeiou"
+#     n_vowels = 0
+#     n_consonants = 0
+#     for char in s:
+#         if char in vowels:
+#             n_vowels += 1
+#         else:
+#             n_consonants += 1
+#     return n_vowels, n_consonants
+#
+# amongus= "amongus"
+# print(char_counts(amongus))
+
+#Variable Number of Arguments
+# def mean(*args):
+#     tot = 0
+#     for a in args:
+#         tot += a
+#     return tot/len(args)
+#
+# print(mean(6,8,7,7,4,3,2,5,6,7,8))
+
+#sum_and_product task
+# def sum_and_product(l):
+#     """L is a list of numbers
+#     Return a tuple where the first value is the sum of all elements in L and the second value is the product of all elements in L"""
+#     sum = 0
+#     prod = 1
+#     for num in l:
+#         sum += num
+#         prod *= num
+#     return sum, prod
+#
+# test = [1, 2, 3, 4, 5]
+# print(sum_and_product(test))
+
