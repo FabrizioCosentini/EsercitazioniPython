@@ -483,3 +483,67 @@
 # test = [1, 2, 3, 4, 5]
 # print(sum_and_product(test))
 
+#.append exercise
+# L1 = ["re"]
+# L2 = ["mi"]
+# L3 = ["do"]
+#
+# L4 = L1 + L2
+# L3.append(L4)
+# L = L1.append(L3)
+#
+# print(L1)
+# print(L2)
+# print(L3)
+# print(L4)
+# print(L)
+
+#make_ordered_list task
+# def make_ordered_list(n):
+#     """n is a positive int
+#     Returns a list containing all ints in order from 0 to n (inclusive)"""
+#     mylist = []
+#     for i in range(n+1):
+#         mylist.append(i)
+#     return mylist
+#
+# print(make_ordered_list(9))
+
+#remove_elem task
+# def remove_elem(L, e):
+#     """ L is a list
+#     Returns a new list with elements in the same order as L but without any elements equal to e."""
+#     new_list = []
+#     for n in L:
+#         if n != e:
+#             new_list.append(n)
+#     return new_list
+#
+# print(remove_elem([1, 2, 2, 5, 7, 8, 2, 4],2))
+
+#count_words
+# def count_words(sen):
+#     """sen is a string representing a sentence
+#     Returns how many words are in s (i.e. a word is a sequence of characters between spaces)."""
+#     count_list = sen.split(" ")
+#     return len(count_list)
+#
+# print(count_words("Hello it's me"))
+
+#sort_words task
+# def sort_words(sen):
+#     """sen is a string representing a sentence
+#     Returns a list containing all the words in sen but sorted in alphabetical order"""
+#     list = sen.split(" ")
+#     list.sort()
+#     return list
+#
+# print(sort_words("today I'm enjoying the sun and the breeze".lower()))
+
+#square_list task
+# def square_list(mylist):
+#     for i in range(len(mylist)):
+#         mylist[i] = mylist[i]**2
+#     return mylist
+#
+# print(square_list([1, 2, 3]))
