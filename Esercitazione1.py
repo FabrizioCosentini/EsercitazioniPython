@@ -547,3 +547,42 @@
 #     return mylist
 #
 # print(square_list([1, 2, 3]))
+
+#remove_all task
+# def remove_all(mylist, e):
+#     """mylist is a list
+#     Mutates mylist to remove all elements in mylist that are equal to e
+#     Returns None"""
+#     copylist =  mylist[:]
+#     mylist.clear()
+#     for item in copylist:
+#         if item != e:
+#             mylist.append(item)
+#
+# L = [1, 2, 2, 2]
+# print(remove_all(L, 2))
+# print(L)
+
+#remove all with remove function (while loop)
+# def remove_all(mylist, e):
+#     """mylist is a list
+#     Mutates mylist to remove all elements in mylist that are equal to e
+#     Returns None"""
+#     while e in mylist:
+#         mylist.remove(e)
+#
+# L = [ 1, 2, 4, 5, 2, 2, 6, 2]
+# remove_all(L, 2)
+# print(L)
+
+#remove_dubs task
+# def remove_dubs(L1, L2):
+#     L1_copy = L1[:]
+#     for e in L1_copy:
+#         if e in L2:
+#             L1.remove(e)
+#
+# L1 = [10, 20, 30, 40, 50]
+# L2 = [10, 20, 60, 70]
+# remove_dubs(L1, L2)
+# print(L1, L2)
