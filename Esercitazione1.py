@@ -586,3 +586,19 @@
 # L2 = [10, 20, 60, 70]
 # remove_dubs(L1, L2)
 # print(L1, L2)
+
+#Debugging task
+# def pairwise_div(Lnum, Ldenom):
+#     """Lnum and Ldenom are non-empty lists of equal length containing numbers.
+#     Returns a new list whose elements are the pairwise division of an element in Lnum by an element in Ldenom.
+#     Raise a ValueError if Ldenom contains 0."""
+#     assert Ldenom != [] and Lnum != [], print("None of the lists can be empty")
+#     assert len(Lnum) == len(Ldenom), print("The two lists must be of equal length.")
+#     try:
+#         Lres = []
+#         Lres = [Lnum[i]/Ldenom[i] for i in range(len(Lnum))]
+#         print(Lres)
+#     except ZeroDivisionError:
+#         print("You can't divide by zero")
+#
+# pairwise_div([12, 36, 54, 45], [4, 6, 6, 5])
